@@ -16,7 +16,7 @@ MY_PASSWORD = os.environ.get("MY_PASSWORD")
 # }
 # df = pd.DataFrame(data)
 # df.to_csv("ngay_sinh.csv", index=False, encoding="utf-8")
-records = pd.read_csv('ngay_sinh.csv').to_dict(orient='records')
+records = pd.read_csv('birthdays.csv').to_dict(orient='records')
 # check ngay 
 for i in records:
     if i["NgaySinh"] == now_str:
